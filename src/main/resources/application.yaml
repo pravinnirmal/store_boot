@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: store
+    host: localhost/
+    port: 8080
+
+paypal:
+  apiUrl: "https://api.paypal.com"
+  enabled: true
+  timeout: 1000
+  supported-currencies: USD,INR,GBP,EUR
+
+paytm:
+  apiUrl: "https://api.paytm.com"
+  enabled: true
+  timeout: 2000
+  supported-currencies: USD,INR,GBP,EUR,JPY
+
+order:
+  payment-service: paytm
+
+notification:
+  channel: sms
+
